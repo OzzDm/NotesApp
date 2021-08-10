@@ -1,0 +1,215 @@
+/* body{ 
+    /* background-color: #374558; */
+    /*background-image: url('assets/img/black.jpg');
+    background-repeat: no-repeat;    
+    background-size: contain; 
+ } */
+ html{
+     scroll-behavior: smooth;
+ }
+.jumbotron{
+    margin-bottom: 0;
+}
+nav .nav-item .text-white{
+    text-shadow: 1px 1px 3px #CE5937;
+}
+h1.display-4{
+    padding: 6rem 0rem;
+    font-size:4rem;
+}
+.home_section{
+    height:100vh;
+}
+@media screen and (max-width:800px){
+    img {
+        display:none;
+    }
+}
+p.lead{
+    letter-spacing: 0.16rem;
+}
+.home_section button{
+    margin: 5rem 0rem;
+}
+
+.btn{
+    background-color:#575A89;
+    box-shadow:none;
+}
+.btn:hover, .btn:focus{
+    background-color:#3F3D56;
+    box-shadow:none;
+}
+.ideas{
+    margin-top:10rem;
+}
+/* #login_section{
+     border-radius: 32px; 
+    background: #374558;
+    box-shadow:  12px 12px 28px #2b3645, 
+             -12px -12px 28px #43546b;
+} */
+.login_section{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height:100vh;
+    /* position: relative; */
+    
+}
+.login_section .container{
+    padding-top: 10rem;
+}
+
+.login_section ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #5a574e;
+    opacity: 1; /* Firefox */
+  }
+  
+  .login_section :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #5a574e;
+  }
+  
+  .login_section ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #5a574e;
+  }
+  
+/* Change autocomplete styles in WebKit */
+.login_section input:-webkit-autofill,
+.login_section input:-webkit-autofill:hover,
+.login_section input:-webkit-autofill:focus,
+.login_section textarea:-webkit-autofill,
+.login_section textarea:-webkit-autofill:hover,
+.login_section textarea:-webkit-autofill:focus,
+.login_section select:-webkit-autofill,
+.login_section select:-webkit-autofill:hover,
+.login_section select:-webkit-autofill:focus {  
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.login_section .form-group{
+    padding: 0.65rem;
+}
+.login_section input[type=text], .login_section input[type=password]{
+    border:none;
+    width:100%;
+    height:3rem;
+    padding:1.25rem;
+
+
+    border-radius: 44px;
+    background: #FF8817;
+    box-shadow: inset 8px 8px 16px #db7514, 
+            inset -8px -8px 16px #ff9b1a;
+}
+
+.login_section input:focus{
+    outline: none;
+}
+.login_section button{
+    width:50%;
+    height:4rem;
+    margin-top:0.5rem;
+    border-width: 3.5px;
+    outline:none;
+
+    border-radius: 49px;
+    background: linear-gradient(315deg, #ff9219, #e67a15);
+}
+.login_section button:hover, .login_section button:focus{
+    box-shadow: -8px -8px 16px #cf6e13, 
+                8px 8px 16px #ffa21b;
+} 
+
+
+.signUp_section{
+    /* display:none; */
+    height:100vh;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+
+    
+}
+.signUp_section .container{
+    padding:3.5% 0;
+}
+.signUp_section .card{
+    background-color: #0F2027;
+    width:40rem;
+    height:80%;
+    border-radius: 0;
+
+    -webkit-box-shadow: 0px 7px 10px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 10px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 10px 10px rgba(0,0,0,0.75);
+}
+.signUp_section .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    display: block;   
+
+    background-image: -moz-linear-gradient(90deg, #f5af19 0%, #f12711 100%);
+    background-image: -webkit-linear-gradient(90deg, #f5af19 0%, #f12711 100%);
+    background-image: -ms-linear-gradient(90deg, #f5af19 0%, #f12711 100%);
+    background-image: linear-gradient(90deg, #f5af19 0%, #f12711 100%);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5); 
+}
+
+.signUp_section .form-group{
+    padding: 0.65rem;
+}
+
+.signUp_section input{
+    outline:none;
+    border:none;
+    border-radius: 44px;
+    width:75%;
+    height:3rem;
+    padding:1.25rem;
+    color:#fff;
+
+background: #162A32;
+box-shadow: inset 13px 13px 26px #12232a, 
+            inset -13px -13px 26px #1a313a;
+}
+
+/* Change autocomplete styles in WebKit */
+.signUp_section input:-webkit-autofill,
+.signUp_section input:-webkit-autofill:hover,
+.signUp_section input:-webkit-autofill:focus,
+.signUp_section textarea:-webkit-autofill,
+.signUp_section textarea:-webkit-autofill:hover,
+.signUp_section textarea:-webkit-autofill:focus,
+.signUp_section select:-webkit-autofill,
+.signUp_section select:-webkit-autofill:hover,
+.signUp_section select:-webkit-autofill:focus { 
+    -webkit-text-fill-color: #fff;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.signUp_section button {
+    outline:none;
+    border:none;
+    border-radius: 44px;
+    width:50%;
+    height: 3.5rem;
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-size: 200%;
+    transition: 0.5s;
+    font-size: large;
+    font-weight: 600;
+    margin:2rem 0 3rem;
+    }
+.signUp_section button:hover{ 
+    background-position: right; 
+    box-shadow:  13px 13px 21px #0f1c21;
+}
